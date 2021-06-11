@@ -6,8 +6,6 @@ import computerGraphic from '../images/computer-screen-graphic.png'
 
 export default function ComputerGraphic() {
 
-  let picHeight;
-
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up('sm'));
 
