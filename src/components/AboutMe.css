@@ -4,10 +4,17 @@ img {
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #37474F;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .5em;
   line-height: 1.8em;
+}
+
+@media (max-width: 512px) {
+  p {
+    font-size: .9em;
+    text-align: center;
+  }
 }
