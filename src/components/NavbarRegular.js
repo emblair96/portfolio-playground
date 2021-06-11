@@ -39,17 +39,17 @@ export default function HideAppBar(props) {
             justify="flex-end"
           >
           <Toolbar>
-            <Link to="home">
+            <Link to="Home">
               <Button className="btn" style={{ margin: ".3em", fontSize: "1.1em", color: "#37474F" }} variant="outlined" to="#home">
                 Home
               </Button>
             </Link>
-            <Link to="projects">
+            <Link to="Projects">
               <Button style={{ margin: ".3em", fontSize: "1.1em", color: "#37474F" }} variant="outlined" href="#projects">
                 Projects
               </Button>
             </Link>
-            <Link to="contact">
+            <Link to="Contact">
               <Button style={{ margin: ".3em", fontSize: "1.1em", color: "#37474F" }} variant="outlined" href="#contact">
                 Contact
               </Button>
