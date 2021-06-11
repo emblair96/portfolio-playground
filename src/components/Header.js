@@ -2,8 +2,6 @@ import { Grid, Container, styled } from '@material-ui/core';
 import './Header.css';
 import GridBase from "@material-ui/core/Grid";
 
-
-
 export default function Header() {
 
   return (
