@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio-playground/static/css/main.b0b8cbc7.chunk.css",
-    "main.js": "/portfolio-playground/static/js/main.0873c494.chunk.js",
-    "main.js.map": "/portfolio-playground/static/js/main.0873c494.chunk.js.map",
+    "main.css": "/portfolio-playground/static/css/main.02f4e4a1.chunk.css",
+    "main.js": "/portfolio-playground/static/js/main.3c04be29.chunk.js",
+    "main.js.map": "/portfolio-playground/static/js/main.3c04be29.chunk.js.map",
     "runtime-main.js": "/portfolio-playground/static/js/runtime-main.8bbc47de.js",
     "runtime-main.js.map": "/portfolio-playground/static/js/runtime-main.8bbc47de.js.map",
-    "static/js/2.fb791572.chunk.js": "/portfolio-playground/static/js/2.fb791572.chunk.js",
-    "static/js/2.fb791572.chunk.js.map": "/portfolio-playground/static/js/2.fb791572.chunk.js.map",
+    "static/js/2.3e3d51ff.chunk.js": "/portfolio-playground/static/js/2.3e3d51ff.chunk.js",
+    "static/js/2.3e3d51ff.chunk.js.map": "/portfolio-playground/static/js/2.3e3d51ff.chunk.js.map",
     "index.html": "/portfolio-playground/index.html",
-    "static/css/main.b0b8cbc7.chunk.css.map": "/portfolio-playground/static/css/main.b0b8cbc7.chunk.css.map",
-    "static/js/2.fb791572.chunk.js.LICENSE.txt": "/portfolio-playground/static/js/2.fb791572.chunk.js.LICENSE.txt",
+    "static/css/main.02f4e4a1.chunk.css.map": "/portfolio-playground/static/css/main.02f4e4a1.chunk.css.map",
+    "static/js/2.3e3d51ff.chunk.js.LICENSE.txt": "/portfolio-playground/static/js/2.3e3d51ff.chunk.js.LICENSE.txt",
     "static/media/computer-screen-graphic.cec16645.png": "/portfolio-playground/static/media/computer-screen-graphic.cec16645.png",
-    "static/media/emily-photo.6f5958c5.jpeg": "/portfolio-playground/static/media/emily-photo.6f5958c5.jpeg"
+    "static/media/emily-photo.6f5958c5.jpeg": "/portfolio-playground/static/media/emily-photo.6f5958c5.jpeg",
+    "static/media/food-medley.c0b03529.png": "/portfolio-playground/static/media/food-medley.c0b03529.png",
+    "static/media/friends.145c8749.png": "/portfolio-playground/static/media/friends.145c8749.png",
+    "static/media/presents.584c650a.png": "/portfolio-playground/static/media/presents.584c650a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8bbc47de.js",
-    "static/js/2.fb791572.chunk.js",
-    "static/css/main.b0b8cbc7.chunk.css",
-    "static/js/main.0873c494.chunk.js"
+    "static/js/2.3e3d51ff.chunk.js",
+    "static/css/main.02f4e4a1.chunk.css",
+    "static/js/main.3c04be29.chunk.js"
   ]
 }
