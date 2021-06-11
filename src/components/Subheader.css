@@ -7,3 +7,9 @@ h2 {
   text-shadow: 2px 2px 4px #37474F;  
   letter-spacing: .7em;
 }
+
+@media (max-width: 512px) {
+  h2 {
+    font-size: 2em;
+  }
+}
