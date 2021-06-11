@@ -67,7 +67,7 @@ export default function DeveloperJourney() {
 
         </Grid>
            <Grid style={{marginBottom: ".8em"}} item xs={10} sm={10}>
-          <h3 style={{color: "#37474F"}}>Other Technologies: Bootstrap / jQuery / Git / Heroku / Handlebars / Security and Session Storage / User Authentication / Responsive Design</h3>
+          <h3 style={{color: "#37474F", textAlign: "center"}}>Other Technologies: Bootstrap / jQuery / Git / Heroku / Handlebars / Security and Session Storage / User Authentication / Responsive Design</h3>
            </Grid>
 
       </Grid>
