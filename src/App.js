@@ -14,6 +14,8 @@ import ComputerGraphic from './components/ComputerGraphic';
 import AboutMe from './components/AboutMe';
 import DeveloperJourney from './components/DeveloperJourney';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -33,12 +35,10 @@ function App() {
         <Projects />
         <Divider style={{ margin: "2em" }} />
         <div id="Contact" />
-        <Subheader text="LET'S CONNECT"/>
-        <Divider style={{ margin: "2em" }} />
-
-
-
-
+        <Subheader text="CONTACT"/>
+        <Contact />
+        <Divider style={{ margin: "4em" }} />
+        <Footer />
       </>
   );
 }

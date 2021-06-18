@@ -40,7 +40,7 @@ export default function Projects() {
         description="Where food meets music. Developed in a group project, this app generates a recipe and playlist based on user input to create an immersive experience, that engages all senses, without leaving the confines of your kitchen."
         img={foodPhoto}
         repoLink="https://github.com/emblair96/eats-and-beats-app"
-        deployedLink="https://emblair96.github.io/eats-and-beats-app/"
+        deployedLink="https://eats-and-beats.herokuapp.com/"
       />
       </Grid>
       </Grid>
