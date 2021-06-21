@@ -30,25 +30,17 @@ export default function PortfolioNavbar() {
   }, [selected, selectedBtn.current]);
 
   // Change to burger menu view on medium devices and below
-  const responsiveNav = 
-  matches 
-  ? 
-  <Router>
-    <Link to={selected}>
-      <NavbarRegular onClickContact={() => setSelected(true)} btnRef={selectedBtn} />
-    </Link>
-  </Router>
-  : 
-  <Router>
-    <Link to={selected}>
-      <NavbarBurger onClickContact={() => setSelected(true)} btnRef={selectedBtn} />
-    </Link>
-  </Router>
-
+  const responsiveNav =
+    matches
+      ? <NavbarRegular onClickContact={() => setSelected(true)} btnRef={selectedBtn} />
+      : <NavbarBurger onClickContact={() => setSelected(true)} btnRef={selectedBtn} />
   return (
     <>
-    {responsiveNav}
+      <Router>
+        <Link to={selected}>
+          {responsiveNav}
+        </Link>
+      </Router>
     </>
-    
   )
 }
