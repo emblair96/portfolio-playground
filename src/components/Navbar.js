@@ -38,7 +38,12 @@ export default function PortfolioNavbar() {
       <NavbarRegular onClickContact={() => setSelected(true)} btnRef={selectedBtn} />
     </Link>
   </Router>
-  : <NavbarBurger />
+  : 
+  <Router>
+    <Link to={selected}>
+      <NavbarBurger onClickContact={() => setSelected(true)} btnRef={selectedBtn} />
+    </Link>
+  </Router>
 
   return (
     <>
