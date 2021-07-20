@@ -77,11 +77,13 @@ export default function SwipeableTemporaryDrawer(props) {
     >
       <List>
         {["Home", "Projects", "Contact"].map((text) => (
-          <Link to={text}>
-            <ListItem button key={text} href={'#' + {text}}>
-              <ListItemText primary={text} />
-            </ListItem>
-          </Link>
+          <li>
+            <Link className={text} to={text}>
+              <ListItem button key={text} href={'#' + {text}}>
+                <ListItemText primary={text} />
+              </ListItem>
+            </Link>
+          </li>
         ))}
       </List>
     </div>
@@ -91,7 +93,7 @@ export default function SwipeableTemporaryDrawer(props) {
     <ThemeProvider>
       <React.Fragment>
         <CssBaseline />
-        <ElevationScroll {...props}>
+        {/* <ElevationScroll {...props}> */}
           <AppBar style={{ backgroundColor: "#cfd8dc", boxShadow: "0px 0px 5px grey", height: '90px' }}>
             <Container classes={{ label: "MuiAppBar-positionRelative" }}>
             <Grid
@@ -119,7 +121,7 @@ export default function SwipeableTemporaryDrawer(props) {
             </Grid>
             </Container>
           </AppBar>
-        </ElevationScroll>
+        {/* </ElevationScroll> */}
         <Toolbar />
       </React.Fragment>
     </ThemeProvider>
