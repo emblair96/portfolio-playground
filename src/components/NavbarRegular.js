@@ -40,7 +40,7 @@ export default function HideAppBar(props) {
           >
           <Toolbar>
             <Link to="Home">
-              <Button className="btn" style={{ margin: ".3em", fontSize: "1.1em", color: "#37474F" }} variant="outlined" to="#home">
+              <Button className="btn" style={{ margin: ".3em", fontSize: "1.1em", color: "#37474F" }} variant="outlined" href="#home">
                 Home
               </Button>
             </Link>
