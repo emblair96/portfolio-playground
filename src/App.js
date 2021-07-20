@@ -31,11 +31,11 @@ function App() {
         <AboutMe />
         <DeveloperJourney />
         <Divider style={{ margin: "2em" }} />
-        <div id="Projects" className="element" />
+        <div id="Projects" />
         <Subheader text="MY WORK"/>
         <Projects />
         <Divider style={{ margin: "2em" }} />
-        <Element name="Contact" className="element" id="Contact" />
+        <div id="Contact" />
         <Subheader text="CONTACT" />
         <Contact />
         <Divider style={{ margin: "4em" }} />

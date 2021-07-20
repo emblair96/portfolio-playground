@@ -32,14 +32,14 @@ export default function PortfolioNavbar() {
   // Change to burger menu view on medium devices and below
   const responsiveNav =
     matches
-      ? <NavbarRegular onClickContact={() => setSelected(true)} btnRef={selectedBtn} />
-      : <NavbarBurger onClickContact={() => setSelected(true)} btnRef={selectedBtn} />
+      ? <NavbarRegular />
+      : <NavbarBurger />
   return (
     <>
       <Router>
-        <Link to={selected}>
+        {/* <Link to={selected}> */}
           {responsiveNav}
-        </Link>
+        {/* </Link> */}
       </Router>
     </>
   )
