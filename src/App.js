@@ -22,7 +22,7 @@ function App() {
   return (
       <>
         <Navbar />
-        <div id="Home" name="Home" />
+        <div id="Home" />
         <Header />
         <Subheader text="SOFTWARE ENGINEER"/>
         <ComputerGraphic />
@@ -31,11 +31,11 @@ function App() {
         <AboutMe />
         <DeveloperJourney />
         <Divider style={{ margin: "2em" }} />
-        <div id="Projects" name="Projects" />
+        <div id="Projects" className="element" />
         <Subheader text="MY WORK"/>
         <Projects />
         <Divider style={{ margin: "2em" }} />
-        <Element id="Contact" name="Contact" />
+        <Element name="Contact" className="element" id="Contact" />
         <Subheader text="CONTACT" />
         <Contact />
         <Divider style={{ margin: "4em" }} />
