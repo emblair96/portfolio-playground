@@ -36,11 +36,11 @@ export default function PortfolioNavbar() {
       : <NavbarBurger />
   return (
     <>
-      <Router>
+      {/* <Router> */}
         {/* <Link to={selected}> */}
           {responsiveNav}
         {/* </Link> */}
-      </Router>
+      {/* </Router> */}
     </>
   )
 }
