@@ -16,12 +16,13 @@ import DeveloperJourney from './components/DeveloperJourney';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { Element } from 'react-scroll';
 
 function App() {
   return (
       <>
         <Navbar />
-        <div id="Home" />
+        <div id="Home" name="Home" />
         <Header />
         <Subheader text="SOFTWARE ENGINEER"/>
         <ComputerGraphic />
@@ -30,12 +31,12 @@ function App() {
         <AboutMe />
         <DeveloperJourney />
         <Divider style={{ margin: "2em" }} />
-        <div id="Projects" />
+        <div id="Projects" name="Projects" />
         <Subheader text="MY WORK"/>
         <Projects />
         <Divider style={{ margin: "2em" }} />
-        <div id="Contact" />
-        <Subheader text="CONTACT"/>
+        <Element id="Contact" name="Contact" />
+        <Subheader text="CONTACT" />
         <Contact />
         <Divider style={{ margin: "4em" }} />
         <Footer />
