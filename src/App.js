@@ -26,6 +26,7 @@ function App() {
         <Header />
         <Subheader text="SOFTWARE ENGINEER"/>
         <ComputerGraphic />
+        <h1>this is a test.</h1>
         <Divider style={{ margin: "2em" }} />
         <Subheader text="ABOUT ME."/>
         <AboutMe />
