@@ -44,12 +44,12 @@ export default function HideAppBar(props) {
                 Home
               </Button>
             </Link>
-            <Link to="Projects" smooth="true">
+            <Link to="Projects" smooth="true" duration="100">
               <Button style={{ margin: ".3em", fontSize: "1.1em", color: "#37474F" }} variant="outlined" href="#projects">
                 Projects
               </Button>
             </Link>
-            <Link to="Contact" smooth="true">
+            <Link to="Contact" smooth="true" duration="100">
               <Button style={{ margin: ".3em", fontSize: "1.1em", color: "#37474F" }} variant="outlined" href="#contact">
                 Contact
               </Button>
