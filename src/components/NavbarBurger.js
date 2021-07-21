@@ -78,7 +78,7 @@ export default function SwipeableTemporaryDrawer(props) {
       <List>
         {["Home", "Projects", "Contact"].map((text) => (
           <Link to={text} smooth="true" duration="100">
-            <ListItem button key={text} href={'#'+{text}}>
+            <ListItem button key={text} href={'#'+text}>
               <ListItemText primary={text} />
             </ListItem>
           </Link>
