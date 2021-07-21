@@ -71,16 +71,16 @@ export default function SwipeableTemporaryDrawer(props) {
       className={clsx(classes.list, {
         [classes.fullList]: anchor === "top" || anchor === "bottom"
       })}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
+      // role="presentation"
+      // onClick={toggleDrawer(anchor, false)}
+      // onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
         {["Home", "Projects", "Contact"].map((text) => (
           <Link to={text} smooth="true" duration="100">
             <ListItem button key={text}>
-              <Button href={text}>{text}</Button>
-              {/* <ListItemText primary={text} /> */}
+              {/* <Button href={text}>{text}</Button> */}
+              <ListItemText primary={text} />
             </ListItem>
           </Link>
         ))}
