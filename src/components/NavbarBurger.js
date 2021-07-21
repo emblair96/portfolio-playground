@@ -71,11 +71,29 @@ export default function SwipeableTemporaryDrawer(props) {
       className={clsx(classes.list, {
         [classes.fullList]: anchor === "top" || anchor === "bottom"
       })}
-      // role="presentation"
-      // onClick={toggleDrawer(anchor, false)}
-      // onKeyDown={toggleDrawer(anchor, false)}
+    // role="presentation"
+    // onClick={toggleDrawer(anchor, false)}
+    // onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
+        <Link to="Home">
+          <ListItem button key="Home">
+            {/* <Button href={text}>{text}</Button> */}
+            <ListItemText>Home</ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="Projects">
+          <ListItem button key="Projects">
+            {/* <Button href={text}>{text}</Button> */}
+            <ListItemText>Projects</ListItemText>
+          </ListItem>
+        </Link>
+        <Link to="Contact">
+          <ListItem button key="Contact">
+            {/* <Button href={text}>{text}</Button> */}
+            <ListItemText>Contact</ListItemText>
+          </ListItem>
+        </Link>
         {["Home", "Projects", "Contact"].map((text) => (
           <Link to={text} smooth="true" duration="100">
             <ListItem button key={text}>
@@ -91,37 +109,37 @@ export default function SwipeableTemporaryDrawer(props) {
   return (
     <ThemeProvider>
       {/* <React.Fragment> */}
-        <CssBaseline />
-        {/* <ElevationScroll {...props}> */}
-          <AppBar style={{ backgroundColor: "#cfd8dc", boxShadow: "0px 0px 5px grey", height: '90px' }}>
-            <Container classes={{ label: "MuiAppBar-positionRelative" }}>
-            <Grid
-                container
-                spacing={0}
-                direction="row"
-                justify="flex-end"
-                alignItems="center"
-              >
-              <div>
-                {["top"].map((anchor) => (
-                  <React.Fragment key="top">
-                    <Button onClick={toggleDrawer(anchor, true)}><MenuIcon style = {{ fontSize: "3.5em", color: "#37474F" }}/></Button>
-                    <SwipeableDrawer
-                      anchor={anchor}
-                      open={state[anchor]}
-                      onClose={toggleDrawer(anchor, false)}
-                      onOpen={toggleDrawer(anchor, true)}
-                    >
-                      {list(anchor)}
-                    </SwipeableDrawer>
-                  </React.Fragment>
-                ))}
-              </div>
-            </Grid>
-            </Container>
-          </AppBar>
-        {/* </ElevationScroll> */}
-        {/* <Toolbar /> */}
+      <CssBaseline />
+      {/* <ElevationScroll {...props}> */}
+      <AppBar style={{ backgroundColor: "#cfd8dc", boxShadow: "0px 0px 5px grey", height: '90px' }}>
+        <Container classes={{ label: "MuiAppBar-positionRelative" }}>
+          <Grid
+            container
+            spacing={0}
+            direction="row"
+            justify="flex-end"
+            alignItems="center"
+          >
+            <div>
+              {["top"].map((anchor) => (
+                <React.Fragment key="top">
+                  <Button onClick={toggleDrawer(anchor, true)}><MenuIcon style={{ fontSize: "3.5em", color: "#37474F" }} /></Button>
+                  <SwipeableDrawer
+                    anchor={anchor}
+                    open={state[anchor]}
+                    onClose={toggleDrawer(anchor, false)}
+                    onOpen={toggleDrawer(anchor, true)}
+                  >
+                    {list(anchor)}
+                  </SwipeableDrawer>
+                </React.Fragment>
+              ))}
+            </div>
+          </Grid>
+        </Container>
+      </AppBar>
+      {/* </ElevationScroll> */}
+      {/* <Toolbar /> */}
       {/* </React.Fragment> */}
     </ThemeProvider>
 
