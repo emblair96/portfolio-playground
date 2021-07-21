@@ -71,33 +71,14 @@ export default function SwipeableTemporaryDrawer(props) {
       className={clsx(classes.list, {
         [classes.fullList]: anchor === "top" || anchor === "bottom"
       })}
-    // role="presentation"
-    // onClick={toggleDrawer(anchor, false)}
-    // onKeyDown={toggleDrawer(anchor, false)}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        <Link to="Home">
-          <ListItem button key="Home">
-            {/* <Button href={text}>{text}</Button> */}
-            <ListItemText>Home</ListItemText>
-          </ListItem>
-        </Link>
-        <Link to="Projects">
-          <ListItem button key="Projects">
-            {/* <Button href={text}>{text}</Button> */}
-            <ListItemText>Projects</ListItemText>
-          </ListItem>
-        </Link>
-        <Link to="Contact">
-          <ListItem button key="Contact">
-            {/* <Button href={text}>{text}</Button> */}
-            <ListItemText>Contact</ListItemText>
-          </ListItem>
-        </Link>
         {["Home", "Projects", "Contact"].map((text) => (
           <Link to={text} smooth="true" duration="100">
-            <ListItem button key={text}>
-              {/* <Button href={text}>{text}</Button> */}
+            <ListItem button key={text} href={'#'+{text}}>
               <ListItemText primary={text} />
             </ListItem>
           </Link>
@@ -122,7 +103,7 @@ export default function SwipeableTemporaryDrawer(props) {
           >
             <div>
               {["top"].map((anchor) => (
-                <React.Fragment key="top">
+                <React.Fragment key={anchor}>
                   <Button onClick={toggleDrawer(anchor, true)}><MenuIcon style={{ fontSize: "3.5em", color: "#37474F" }} /></Button>
                   <SwipeableDrawer
                     anchor={anchor}
