@@ -23,9 +23,8 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/portfolio-playground" component={Home} />
         </Switch>
-        <Route render={() => <Redirect to="/" />} />
       </Router>
     </>
   );
