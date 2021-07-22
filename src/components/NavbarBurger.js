@@ -12,7 +12,9 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import { AppBar, Container, Grid, Toolbar } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
 import { Link } from "react-scroll";
+import { HashLink } from "react-router-hash-link";
 import { createMuiTheme } from "@material-ui/core";
+import './NavbarBurger.css';
 
 
 const useStyles = makeStyles({
@@ -77,11 +79,12 @@ export default function SwipeableTemporaryDrawer(props) {
     >
       <List>
         {["Home", "Projects", "Contact"].map((text) => (
-          <Link to={text} smooth="true" duration="100">
-            <ListItem button key={text} href={'#'+text}>
+          // <Link to={text} smooth="true" duration="100">
+          <HashLink smooth to={'#'+text}>
+            <ListItem button key={text}>
               <ListItemText primary={text} />
             </ListItem>
-          </Link>
+          </HashLink>
         ))}
       </List>
     </div>
@@ -123,6 +126,5 @@ export default function SwipeableTemporaryDrawer(props) {
       {/* <Toolbar /> */}
       {/* </React.Fragment> */}
     </ThemeProvider>
-
   );
 }
