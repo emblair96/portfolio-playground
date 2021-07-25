@@ -1,5 +1,5 @@
 import { useTheme } from "@material-ui/core/styles";
-import { Grid, Container } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 import computerGraphic from '../images/computer-screen-graphic.png'
@@ -24,8 +24,9 @@ export default function ComputerGraphic() {
     <Grid
       container
       justify='center'
+      data-aos="fade-up"
     >
     {responsiveGraphic}
     </Grid>
   )
-}
+};
