@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio-playground/static/css/main.4b3bc9ff.chunk.css",
-    "main.js": "/portfolio-playground/static/js/main.e63d85ac.chunk.js",
-    "main.js.map": "/portfolio-playground/static/js/main.e63d85ac.chunk.js.map",
+    "main.css": "/portfolio-playground/static/css/main.c463c660.chunk.css",
+    "main.js": "/portfolio-playground/static/js/main.a78b3bdf.chunk.js",
+    "main.js.map": "/portfolio-playground/static/js/main.a78b3bdf.chunk.js.map",
     "runtime-main.js": "/portfolio-playground/static/js/runtime-main.8bbc47de.js",
     "runtime-main.js.map": "/portfolio-playground/static/js/runtime-main.8bbc47de.js.map",
-    "static/js/2.ca215eeb.chunk.js": "/portfolio-playground/static/js/2.ca215eeb.chunk.js",
-    "static/js/2.ca215eeb.chunk.js.map": "/portfolio-playground/static/js/2.ca215eeb.chunk.js.map",
+    "static/css/2.ae9e5f60.chunk.css": "/portfolio-playground/static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.83a284e0.chunk.js": "/portfolio-playground/static/js/2.83a284e0.chunk.js",
+    "static/js/2.83a284e0.chunk.js.map": "/portfolio-playground/static/js/2.83a284e0.chunk.js.map",
     "index.html": "/portfolio-playground/index.html",
-    "static/css/main.4b3bc9ff.chunk.css.map": "/portfolio-playground/static/css/main.4b3bc9ff.chunk.css.map",
-    "static/js/2.ca215eeb.chunk.js.LICENSE.txt": "/portfolio-playground/static/js/2.ca215eeb.chunk.js.LICENSE.txt",
+    "static/css/2.ae9e5f60.chunk.css.map": "/portfolio-playground/static/css/2.ae9e5f60.chunk.css.map",
+    "static/css/main.c463c660.chunk.css.map": "/portfolio-playground/static/css/main.c463c660.chunk.css.map",
+    "static/js/2.83a284e0.chunk.js.LICENSE.txt": "/portfolio-playground/static/js/2.83a284e0.chunk.js.LICENSE.txt",
     "static/media/computer-screen-graphic.cec16645.png": "/portfolio-playground/static/media/computer-screen-graphic.cec16645.png",
-    "static/media/emily-photo.6f5958c5.jpeg": "/portfolio-playground/static/media/emily-photo.6f5958c5.jpeg",
     "static/media/food-medley.c0b03529.png": "/portfolio-playground/static/media/food-medley.c0b03529.png",
     "static/media/friends.145c8749.png": "/portfolio-playground/static/media/friends.145c8749.png",
     "static/media/presents.584c650a.png": "/portfolio-playground/static/media/presents.584c650a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8bbc47de.js",
-    "static/js/2.ca215eeb.chunk.js",
-    "static/css/main.4b3bc9ff.chunk.css",
-    "static/js/main.e63d85ac.chunk.js"
+    "static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.83a284e0.chunk.js",
+    "static/css/main.c463c660.chunk.css",
+    "static/js/main.a78b3bdf.chunk.js"
   ]
 }
