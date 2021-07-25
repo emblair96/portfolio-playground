@@ -1,10 +1,5 @@
 import { useTheme } from "@material-ui/core/styles";
-import {
-  BrowserRouter as Router,
-  Link
-} from "react-router-dom";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { Container, Grid } from '@material-ui/core';
 import React, { useEffect, useState, refs, useRef } from 'react';
 import NavbarRegular from './NavbarRegular';
 import NavbarBurger from './NavbarBurger';
@@ -18,16 +13,18 @@ export default function PortfolioNavbar() {
   // react-scroll npm to simplify navbar scrolling to point on page
   const [selected, setSelected] = useState();
   const selectedBtn = useRef(null);
-  const handleBtnClick = (href) => {
-    setSelected(href)
-    refs.selected.scrollIntoView()
-  };
-  useEffect(() => {
-    if (selected && selectedBtn.current) {
-      selectedBtn.current.scrollIntoView();
-      setSelected(false);
-    }
-  }, [selected, selectedBtn.current]);
+
+  // const handleBtnClick = (href) => {
+  //   setSelected(href)
+  //   refs.selected.scrollIntoView()
+  // };
+
+  // useEffect(() => {
+  //   if (selected && selectedBtn.current) {
+  //     selectedBtn.current.scrollIntoView();
+  //     setSelected(false);
+  //   }
+  // }, [selected, selectedBtn.current]);
 
   // Change to burger menu view on medium devices and below
   const responsiveNav =
@@ -36,11 +33,7 @@ export default function PortfolioNavbar() {
       : <NavbarBurger />
   return (
     <>
-      {/* <Router> */}
-        {/* <Link to={selected}> */}
-          {responsiveNav}
-        {/* </Link> */}
-      {/* </Router> */}
+      {responsiveNav}
     </>
   )
-}
+};

@@ -7,8 +7,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { shadows } from '@material-ui/system';
-
 
 const useStyles = makeStyles({
   root: {
@@ -21,34 +19,34 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ProjectHighlight({title, description, img, repoLink, deployedLink}) {
+export default function ProjectHighlight({ title, description, img, repoLink, deployedLink }) {
   const classes = useStyles();
   return (
-    <div className="card">
+    <div className="card" data-aos="zoom-in">
       <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={img}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h4" component="h3" style={{ color: "#37474F"}}>
-            {title}
-          </Typography>
-          <Typography variant="body1" color="textSecondary" component="h3">
-            {description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="large" color="#37474f" href={repoLink} target="_blank">
-          GitHub Repo
-        </Button>
-        <Button size="large" color="#37474f" href={deployedLink} target="_blank">
-          Deployed Link
-        </Button>
-      </CardActions>
-    </Card>
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image={img}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h4" component="h3" style={{ color: "#37474F" }}>
+              {title}
+            </Typography>
+            <Typography variant="body1" color="textSecondary" component="h3">
+              {description}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="large" color="#37474f" href={repoLink} target="_blank">
+            GitHub Repo
+          </Button>
+          <Button size="large" color="#37474f" href={deployedLink} target="_blank">
+            Deployed Link
+          </Button>
+        </CardActions>
+      </Card>
     </div>
   )
-}
+};

@@ -61,5 +61,5 @@ export default function HideAppBar(props) {
       <Toolbar />
     </React.Fragment>
     </div>
-  );
-}
+  )
+};

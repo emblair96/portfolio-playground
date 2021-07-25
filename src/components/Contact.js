@@ -1,19 +1,8 @@
 import React from "react";
 import { Button, Container, Grid, TextField } from '@material-ui/core';
-import { makeStyles, useTheme, useMediaQuery } from '@material-ui/core';
-import './Contact.css'
+import './Contact.css';
 
 export default function Contact() {
-
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up('md'));
-
-  let textFieldWidth;
-
-  const responsiveWidth =
-    matches
-      ? textFieldWidth = "500vw"
-      : textFieldWidth = "20vw"
 
   return (
     <Container>
@@ -21,11 +10,10 @@ export default function Contact() {
         container
         align="center"
         justify="center"
-        // direction="row"
-        
+        data-aos="fade-left"
       >
         <p>Denver, CO</p>
-        <p><a href="mailto:emilyblair96@gmail.com" style={{textDecoration: "none", color: "#37474F"}}>emilyblair96@gmail.com</a></p>
+        <p><a href="mailto:emilyblair96@gmail.com" style={{ textDecoration: "none", color: "#37474F" }}>emilyblair96@gmail.com</a></p>
         <p>636.288.8821</p>
       </Grid>
       <form noValidate autoComplete="off" action="https://getform.io/f/307f232d-a51b-4229-9ac7-526019627510" method="POST">
@@ -78,4 +66,4 @@ export default function Contact() {
       </form>
     </Container>
   )
-}
+};
